@@ -6,6 +6,21 @@
 
 > 本仓库仅发布 **PC 端可执行文件（exe）**，源代码暂不公开。
 
+## 各端版本
+
+| 端 | 技术栈 | 说明 |
+| --- | --- | --- |
+| **PC 端 Codex Link Engine** | C# .NET 8 WinForms | 本仓库发布（免费） |
+| **HarmonyOS 手表端 Codex Link Watch** | DevEco Studio / ArkTS | 华为 WATCH 5 系列等，付费应用 |
+| **Wear OS 手表端 Codex Link Wear** | Android Studio / Kotlin + Compose for Wear OS | 面向 Wear OS / Android 手表（三星、Pixel Watch 等），提供连接配对、快捷命令、Agent 键、项目进度与状态心跳等能力，与 HarmonyOS 版功能持续对齐 |
+| **手机端 Codex Link Phone**（MVP） | DevEco Studio / ArkTS | HarmonyOS 手机，连接 + Agent/Command 键 + 状态灯 + 设置 |
+
+> **关于开源**：所有端（含 Wear OS 版）的源代码均**暂不公开**，本仓库只提供 PC 端可执行文件。手表端 / 手机端安装包可通过下方 QQ 群获取。
+
+## 使用手册
+
+完整使用说明见 **[使用手册.md](./使用手册.md)**（系统组成、启动准备、PC 端操作、手表端操作、按键映射、端口协议、常见问题等）。
+
 ## 下载
 
 | 文件 | 说明 |
@@ -43,6 +58,11 @@
 - 适用设备：华为 WATCH 5 系列等 HarmonyOS 手表，以及支持 Wear OS / Android 应用的手表；具体厂商型号需单独验证。
 - 当前版本仅支持 Windows，macOS / Linux 等平台后续版本将逐步适配。
 
-## 技术支持
+## 联系与反馈
 
-加入官方 QQ 群获取帮助与最新版本：**596473771**
+- 官方 QQ 群：**596473771**（获取最新版本 / 一键配置包 / 反馈问题）
+- 邮箱：Lx31046@outlook.com
+
+扫码进群：
+
+![QQ 群二维码](./qrcode.png)
