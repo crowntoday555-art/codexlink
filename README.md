@@ -6,6 +6,12 @@
 
 > 本仓库仅发布 **PC 端可执行文件（exe）**，源代码暂不公开。
 
+## 应用展示
+
+| Windows PC 端 | HarmonyOS 手表端 | Wear OS 手表端 |
+|:---:|:---:|:---:|
+| ![Windows PC 端 Codex Link Engine](./screenshot-win.png) | ![HarmonyOS 手表端](./screenshot-harmonyos.jpeg) | ![Wear OS 手表端](./screenshot-wearos.png) |
+
 ## 各端版本
 
 | 端 | 技术栈 | 说明 |
