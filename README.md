@@ -4,7 +4,7 @@
 
 手表通过局域网（TCP）向 PC 端发送控制指令，PC 端将指令转换为键鼠操作，发送给处于前台的 Codex 桌面应用或 CLI，实现远程控制；同时 PC 端会把 Codex 的运行状态（任务开始 / 完成、token 用量等）实时回传到手表端展示。
 
-> 本仓库仅发布 **PC 端可执行文件（exe）**，源代码暂不公开。
+> 本仓库发布 **PC 端可执行文件（exe）** 与各手表端**测试安装包**，源代码暂不公开。
 
 ## 应用展示
 
@@ -21,7 +21,7 @@
 | **Wear OS 手表端 Codex Link Wear** | Android Studio / Kotlin + Compose for Wear OS | 面向 Wear OS / Android 手表（三星、Pixel Watch 等），提供连接配对、快捷命令、Agent 键、项目进度与状态心跳等能力，与 HarmonyOS 版功能持续对齐 |
 | **手机端 Codex Link Phone**（MVP） | DevEco Studio / ArkTS | HarmonyOS 手机，连接 + Agent/Command 键 + 状态灯 + 设置 |
 
-> **关于开源**：所有端（含 Wear OS 版）的源代码均**暂不公开**，本仓库只提供 PC 端可执行文件。手表端 / 手机端安装包可通过下方 QQ 群获取。
+> **关于开源**：所有端（含 Wear OS 版）的源代码均**暂不公开**。本仓库提供 PC 端可执行文件与手表端测试安装包；正式版本与一键配置包可通过下方 QQ 群获取。
 
 ## 使用手册
 
@@ -33,6 +33,32 @@
 | --- | --- |
 | [CodexLinkEngine.zip](./CodexLinkEngine.zip) | PC 端主程序 Codex Link Engine（Windows 10 / 11 x64，单文件版） |
 | [codex-status-hook.zip](./codex-status-hook.zip) | Codex 状态钩子，把 Codex hooks 事件转发给引擎 |
+| [CodexLinkWear-wearos-v1.0-test.apk](./CodexLinkWear-wearos-v1.0-test.apk) | **Wear OS 手表端测试版 v1.0**（.apk，调试构建、未混淆、体积偏大） |
+| [CodexLinkWatch-harmonyos-v1.3.8-test.app](./CodexLinkWatch-harmonyos-v1.3.8-test.app) | **HarmonyOS 手表端测试版 v1.3.8**（.app，应用市场上架包，不可直接安装到手表） |
+| [CodexLinkWatch-harmonyos-v1.3.8-test.hap](./CodexLinkWatch-harmonyos-v1.3.8-test.hap) | **HarmonyOS 手表端测试版 v1.3.8**（.hap，签名直装包，供开发者 hdc / DevEco 安装） |
+
+### 手表端测试包安装
+
+- **Wear OS（.apk）**：在手表上开启「开发者选项 → ADB 调试」并允许通过 Wi-Fi 调试，在电脑上执行 `adb install CodexLinkWear-wearos-v1.0-test.apk` 完成安装；首次使用在手表端填入 PC 的局域网 IP 并与引擎配对。
+- **HarmonyOS（.hap）**：`.app` 是华为应用市场上架专用包，用户无法直接安装；直装请使用签名的 `.hap`，通过 DevEco Studio 安装或执行 `hdc install CodexLinkWatch-harmonyos-v1.3.8-test.hap`。正式版将通过华为应用市场发布。
+
+## Downloads (English)
+
+**Codex Link** lets you control AI coding sessions running on your Windows PC from a smartwatch over local Wi-Fi. The watch sends control commands to the PC-side engine (TCP 9527), which translates them into keyboard/mouse actions for the Codex desktop app or CLI, while task status (start / completion, token usage) is streamed back to the watch in real time.
+
+| File | Description |
+| --- | --- |
+| [CodexLinkEngine.zip](./CodexLinkEngine.zip) | PC-side engine, Codex Link Engine for Windows 10 / 11 x64 (single-file build) |
+| [codex-status-hook.zip](./codex-status-hook.zip) | Codex status hook — forwards Codex hooks events to the engine |
+| [CodexLinkWear-wearos-v1.0-test.apk](./CodexLinkWear-wearos-v1.0-test.apk) | **Wear OS watch client, test build v1.0** (.apk; debug build, not obfuscated, larger size) |
+| [CodexLinkWatch-harmonyos-v1.3.8-test.app](./CodexLinkWatch-harmonyos-v1.3.8-test.app) | **HarmonyOS watch client, test build v1.3.8** (.app; AppGallery submission package, cannot be installed directly on the watch) |
+| [CodexLinkWatch-harmonyos-v1.3.8-test.hap](./CodexLinkWatch-harmonyos-v1.3.8-test.hap) | **HarmonyOS watch client, test build v1.3.8** (.hap; signed package for direct installation via hdc / DevEco Studio) |
+
+**Installing the Wear OS test build (.apk):** enable Developer options → ADB debugging on the watch and allow Wi-Fi debugging, then run `adb install CodexLinkWear-wearos-v1.0-test.apk` from your PC. On first launch, enter the PC's LAN IP in the watch app and pair it with the engine.
+
+**Installing the HarmonyOS test build (.hap):** the `.app` file is the HUAWEI AppGallery distribution package and cannot be sideloaded by users; use the signed `.hap` instead — install it from DevEco Studio or run `hdc install CodexLinkWatch-harmonyos-v1.3.8-test.hap`. The official release will be distributed through HUAWEI AppGallery.
+
+**Requirements:** a Windows 10/11 PC running CodexLinkEngine, and the watch and PC connected to the same Wi-Fi network with client (AP) isolation disabled. The PC engine is free; the watch apps are planned as paid releases.
 
 ## 系统要求
 
