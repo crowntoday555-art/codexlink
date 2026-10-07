@@ -8,9 +8,9 @@
 
 ## 应用展示
 
-| Windows PC 端 | HarmonyOS 手表端 | Wear OS 手表端 |
-|:---:|:---:|:---:|
-| ![Windows PC 端 Codex Link Engine](./screenshot-win.png) | ![HarmonyOS 手表端](./screenshot-harmonyos.jpeg) | ![Wear OS 手表端](./screenshot-wearos.png) |
+| HarmonyOS 手表端 | Wear OS 手表端 |
+|:---:|:---:|
+| ![HarmonyOS 手表端](./screenshot-harmonyos.jpeg) | ![Wear OS 手表端](./screenshot-wearos.png) |
 
 ## 各端版本
 
