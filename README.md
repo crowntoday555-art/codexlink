@@ -17,7 +17,7 @@
 | 端 | 技术栈 | 说明 |
 | --- | --- | --- |
 | **PC 端 Codex Link Engine** | C# .NET 8 WinForms | 本仓库发布（免费） |
-| **HarmonyOS 手表端 Codex Link Watch** | DevEco Studio / ArkTS | 华为 WATCH 5 系列等，付费应用 |
+| **HarmonyOS 手表端 Codex Link Watch** | DevEco Studio / ArkTS | 华为 WATCH 5 系列等；**已上架华为应用市场**（覆盖中国大陆，不含香港、澳门、台湾），**免费下载** |
 | **Wear OS 手表端 Codex Link Wear** | Android Studio / Kotlin + Compose for Wear OS | 面向 Wear OS / Android 手表（三星、Pixel Watch 等），提供连接配对、快捷命令、Agent 键、项目进度与状态心跳等能力，与 HarmonyOS 版功能持续对齐 |
 | **手机端 Codex Link Phone**（MVP） | DevEco Studio / ArkTS | HarmonyOS 手机，连接 + Agent/Command 键 + 状态灯 + 设置 |
 
@@ -39,7 +39,7 @@
 ### 手表端测试包安装
 
 - **Wear OS（.apk）**：在手表上开启「开发者选项 → ADB 调试」并允许通过 Wi-Fi 调试，在电脑上执行 `adb install CodexLinkWear-wearos-v1.0-test.apk` 完成安装；首次使用在手表端填入 PC 的局域网 IP 并与引擎配对。
-- **HarmonyOS（.hap）**：使用签名的 `.hap` 直装包，通过 DevEco Studio 安装或执行 `hdc install CodexLinkWatch-harmonyos-v1.3.8-test.hap`。正式版将通过华为应用市场发布。
+- **HarmonyOS（.hap）**：正式版**已上架华为应用市场**（覆盖中国大陆地区，暂不含香港、澳门、台湾），**免费**下载安装；如需侧载测试，可通过 DevEco Studio 安装或执行 `hdc install CodexLinkWatch-harmonyos-v1.3.8-test.hap`。
 
 ## Downloads (English)
 
@@ -54,9 +54,9 @@
 
 **Installing the Wear OS test build (.apk):** enable Developer options → ADB debugging on the watch and allow Wi-Fi debugging, then run `adb install CodexLinkWear-wearos-v1.0-test.apk` from your PC. On first launch, enter the PC's LAN IP in the watch app and pair it with the engine.
 
-**Installing the HarmonyOS test build (.hap):** install the signed `.hap` from DevEco Studio or run `hdc install CodexLinkWatch-harmonyos-v1.3.8-test.hap`. The official release will be distributed through HUAWEI AppGallery.
+**Installing the HarmonyOS test build (.hap):** the official release is **now available on HUAWEI AppGallery** (mainland China, excluding Hong Kong, Macau and Taiwan), free of charge; for sideloading tests, install the signed `.hap` from DevEco Studio or run `hdc install CodexLinkWatch-harmonyos-v1.3.8-test.hap`.
 
-**Requirements:** a Windows 10/11 PC running CodexLinkEngine, and the watch and PC connected to the same Wi-Fi network with client (AP) isolation disabled. The PC engine is free; the watch apps are planned as paid releases.
+**Requirements:** a Windows 10/11 PC running CodexLinkEngine, and the watch and PC connected to the same Wi-Fi network with client (AP) isolation disabled. Both the PC engine and the HarmonyOS watch app (now on HUAWEI AppGallery) are free.
 
 ## 系统要求
 
@@ -84,7 +84,7 @@
 
 ## 相关说明
 
-- 手表端为付费应用；PC 端 Codex Link Engine 免费。
+- HarmonyOS 手表端**已上架华为应用市场**（覆盖中国大陆，不含香港、澳门、台湾），**免费**；PC 端 Codex Link Engine 免费。
 - 适用设备：华为 WATCH 5 系列等 HarmonyOS 手表，以及支持 Wear OS / Android 应用的手表；具体厂商型号需单独验证。
 - 当前版本仅支持 Windows，macOS / Linux 等平台后续版本将逐步适配。
 
